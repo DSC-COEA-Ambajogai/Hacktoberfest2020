@@ -43,17 +43,7 @@ Read the [participation details](https://hacktoberfest.digitalocean.com/details)
 
 ## How to Contribute in this repo.
 
-Contributing to open-source is easy.
-
-
-- Fork the repository
-- Improve current program by
-  - improving functionality
-  - adding new feature
-  - improving the documentation
-- Push your work and Create a Pull Request
-
-[Click here for detailed explanation](/Contribute.md)
+Checkout checkout.md :)
 
 ## What if my pull requests aren’t accepted?
 
