@@ -6,10 +6,10 @@
 
 Open source is changing the world - one pull request at a time.
 HacktoberFest-2020
-        What is Hacktoberfest?
-        Why Should I Contribute?
-        What Can I Contribute?
-        How to Contribute in this repo.
+       1. What is Hacktoberfest?
+       2. Why Should I Contribute?
+       3. What Can I Contribute?
+       4. How to Contribute in this repo.
 
 
 ## what is Hactoberfest?
