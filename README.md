@@ -5,11 +5,11 @@
 # [HacktoberFest 2020](https://hacktoberfest.digitalocean.com/)
 
 Open source is changing the world - one pull request at a time.
-HacktoberFest-2020
-       1. What is Hacktoberfest?
-       2. Why Should I Contribute?
-       3. What Can I Contribute?
-       4. How to Contribute in this repo.
+**HacktoberFest-2020** <br>
+       1. What is Hacktoberfest?<br>
+       2. Why Should I Contribute?<br>
+       3. What Can I Contribute?<br>
+       4. How to Contribute in this repo.<br>
 
 
 ## what is Hactoberfest?
