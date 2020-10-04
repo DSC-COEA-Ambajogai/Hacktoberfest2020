@@ -43,7 +43,7 @@ Read the [participation details](https://hacktoberfest.digitalocean.com/details)
 
 ## How to Contribute in this repo.
 
-Checkout checkout.md :)
+[Checkout checkout.md :)](https://github.com/DSC-COEA-Ambajogai/Hactoberfest2020/blob/main/checkout.md)
 
 ## What if my pull requests aren’t accepted?
 
