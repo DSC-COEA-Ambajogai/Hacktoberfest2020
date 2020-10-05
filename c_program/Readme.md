@@ -1,5 +1,7 @@
 ### Rules of writing Program
 <ol>
+<li>Create New file of program</li>
+<li>Do Not make Changes in C_program file</li>
 <li>format for every program</li>
 </ol> 
 
