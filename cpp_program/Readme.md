@@ -1,7 +1,9 @@
 ### Rules of writing Program ***Cpp programs***
 <ol>
+          <li>fork this repo</li>
           <li>Create New file of Program</li>
           <li>Do not use Cpp_program file</li>
+          <li>create a pull req.</li>
 <li>format for every program</li>
 </ol> 
 
