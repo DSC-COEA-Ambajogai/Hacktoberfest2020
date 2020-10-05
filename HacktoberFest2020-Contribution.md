@@ -5,7 +5,7 @@
 -create a pull req. <br>
 
 ---
-### for example 
+### add your name in this format only :)
 ```
 > [Your Name](Your Github profile url)
 ```
