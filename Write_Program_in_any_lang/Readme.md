@@ -1,3 +1,13 @@
 ### Write  Hello World Program  in any language
-     1. push to this Repositorie
-     2. Make a pull request
+     1. write your name and program name like  (Example)
+```
+     */ Name: Your Name 
+        Language: java, c,cpp, js,(write lang of your program)
+               
+               ...............
+               Write Your Program.
+               ...............
+     
+     */
+                                                      
+```
