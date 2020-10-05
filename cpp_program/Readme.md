@@ -1,5 +1,7 @@
 ### Rules of writing Program ***Cpp programs***
 <ol>
+          <li>Create New file of Program</li>
+          <li>Do not use Cpp_program file</li>
 <li>format for every program</li>
 </ol> 
 
