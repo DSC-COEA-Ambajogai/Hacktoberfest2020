@@ -1,12 +1,14 @@
 ### Rules of writing Program ***Cpp programs***
-
 <ol>
-<li> Write c program in ***cpp_program.cpp*** file.</li>
 <li>format for every program</li>
-
 </ol> 
 
 ```
+/*       
+          Name: Your Name
+          Program Name : hello world    (as per list)                           
+*/
+
 /*###########################Program Name################################## */
 
 #include <iostream>
