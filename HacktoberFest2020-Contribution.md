@@ -1,8 +1,8 @@
 <h1>HacktoberFest2020-Contribution</h1>
 
--fork this repo
--add your username in this below ```<!--Start writing Name from here--> ``` file
--create a pull req.
+-fork this repo <br>
+-add your username , below ```<!--Start writing Name from here--> ```  <br>
+-create a pull req. <br>
 
 ---
 ### for example 
