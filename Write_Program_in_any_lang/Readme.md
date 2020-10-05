@@ -1,7 +1,8 @@
 ### Write  Hello World Program  in any language
-    A "Hello World" program in your favorite language.
+    - fork this repo 
+    - Add "Hello World" program in your favorite language.
 
-     1. your file name must be your username (Example)
+     - your file name must be your username (Example)
         Name: Tanvi.cpp
         
 #include <iostream>
