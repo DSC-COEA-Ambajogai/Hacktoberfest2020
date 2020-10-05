@@ -1,0 +1,260 @@
+# include<stdio.h>
+# include<conio.h>
+# include<stdlib.h>
+# include<alloc.h>
+struct node
+{
+int info;
+struct node *next;
+}*list;
+void append();
+void addbeg();
+void addafter();
+void delet();
+void search();
+void update();
+void display();
+void main()
+{
+char ch;
+int choice;
+list = NULL; // Initialize list
+do
+{
+clrscr();
+
+printf("\n1. Append\t2. Add first\t3. Addafter\t4. Delete\t5. Search\t6.update\t 7. Display");
+
+printf("\nEnter ur choice: ");
+scanf("%d",&choice);
+switch(choice)
+{
+case 1: append(); break;
+case 2: addbeg(); break;
+
+2
+
+case 3: addafter(); break;
+case 4: delet(); break;
+case 5: search(); break;
+case 6: update(); break;
+case 7: display(); break;
+default: printf("\nWrong choice.");
+}
+printf("\nDo u want to cnt....");
+flushall();
+ch=getche();
+}while(ch == 'y');
+}
+void append() //Insert at the end of the list
+{
+int x;
+struct node *p, *t;
+char ch;
+do
+{
+printf("\nEnter data : ");
+scanf("%d",&x);
+t = malloc(sizeof(struct node)); // create a node
+t->info = x;
+t->next = NULL;
+if(list == NULL) // List is Empty
+list=t;
+else // List Not Empty
+{
+p= list;
+while(p->next != NULL) // Find Last node
+p = p->next;
+p->next = t; // Link new node to last node
+}
+printf("\n Do u want to insert more? ");
+flushall();
+ch=getche();
+}while(ch == 'y');
+}
+
+3
+
+void addbeg() //Insert at the first position.
+{
+struct node *t;
+int x;
+char ch;
+do
+{
+t = malloc(sizeof(struct node)); // Create a node
+printf("\n Enter data : ");
+scanf("%d",&x);
+t->info = x;
+t->next = list;
+list = t;
+printf("\n Do U want to insert more? ");
+flushall();
+ch=getche();
+}while(ch=='y');
+}
+void addafter() // Insert at the specified location
+{
+struct node *p, *t;
+int pos, x,i;
+char ch;
+do
+{
+printf("\n Enter data : ");
+scanf("%d",&x);
+t = malloc(sizeof(struct node));// Create a node
+t->info = x;
+printf("\n Enter position : ");
+scanf("%d",&pos);
+p=list;
+for(i=1 ; i<pos ; i++) // To get position
+{
+if(p == NULL)
+break;
+else
+p = p->next;
+}
+
+4
+
+if(i==pos) // Position found
+{
+t->next = p->next; // Link new and right node
+p->next = t; // link new and left node
+}
+else // Less elements
+printf("\n less elements ");
+printf("\n DO u want to insert more ? ");
+flushall();
+ch=getche();
+} while(ch == 'y');
+}
+/***** Delete a node from linked list *****/
+void delet()
+{
+struct node *p,*r;
+int x;
+char ch;
+do
+{
+printf("\nEnter data to be deleted : ");
+scanf("%d",&x);
+p = list;
+if(p == NULL)
+{
+printf(" \n List Empty");
+break;
+}
+else if(p->info == x) // x found in first node
+{
+printf("\n%d has been deleted",p->info);
+list = p->next;
+free(p);
+}
+else
+{
+r = p; // r: previous node
+p = p->next; // q: current node
+
+5
+
+while(p != NULL)
+
+{
+if(p->info == x) // x found
+{
+printf("\n %d has been deleted",p->info);
+r->next = p->next;
+free(p);
+break;
+}
+else // x not found
+{
+r = p;
+p = p->next;
+}
+}
+if(p==NULL)
+printf("\n %d not found",x);
+}
+printf("\nDO u want to delete more? ");
+flushall();
+ch=getche();
+}while(ch == 'y');
+}
+/***** Search given element in a list *****/
+void search()
+{
+int x;
+char ch;
+struct node *p;
+do
+{
+p = list;
+printf("\n Enter element to be searched: ");
+scanf("%d",&x);
+
+6
+
+while(p != NULL)
+
+{
+if(p->info==x)
+break;
+else
+p = p->next;
+}
+if(p!=NULL)
+printf("\n%d found ",x);
+else
+printf("\n %d Not Found",x);
+printf("\n Do you want to search another element? ");
+flushall();
+ch= getche();
+} while(ch=='y');
+}
+/***** Update a value in a node *****/
+void update()
+{
+int x,nv;
+char ch;
+struct node *p;
+do
+{
+p = list;
+printf("\n Enter element to be updated: ");
+scanf("%d",&x);
+printf("\n Enter new value: ");
+scanf("%d",&nv);
+while(p != NULL)
+{
+if(p->info==x)
+{
+p->info = nv;
+break;
+}
+else
+p = p->next;
+}
+
+7
+
+if(p!=NULL)
+printf("\n %d found and updated ",x);
+else
+printf("\n %d Not Found",x);
+printf("\n Do you want to search another element? ");
+flushall();
+ch= getche();
+} while(ch=='y');
+}
+void display()
+{
+struct node *p;
+p = list;
+if(p == NULL)
+printf("\n List Empty ");
+else
+for( p = list ; p!=NULL ; p = p->next)
+printf("\n%u %3d",p,p->info);
+}
