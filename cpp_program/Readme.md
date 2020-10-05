@@ -36,4 +36,4 @@ int main() {
 </ol> 
 
 ### Do any Program out of 10.
-##### Program should be write in cpp_program.cpp file
+##### Program should be written in cpp_program.cpp file
