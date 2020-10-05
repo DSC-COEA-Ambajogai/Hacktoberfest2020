@@ -1,12 +1,16 @@
 ### Rules of writing Program
 <ol>
-<li> Write c program in ***c_program.c*** file.</li>
 <li>format for every program</li>
-
 </ol> 
 
 ```
-/*###########################Program Name################################## */
+/*       
+          Name: Your Name
+          Program Name : hello world                              
+*/
+
+/*###########################Program start################################## */
+
 #include <stdio.h>
 
 int main()
