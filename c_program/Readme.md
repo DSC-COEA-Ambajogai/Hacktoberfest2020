@@ -1,6 +1,7 @@
 ### Rules of writing Program
 <ol>
 <li>Create New file of program</li>
+<li>file Name should be like (username_program_no.c) Example:(Dsc-coea_01.c)</li>
 <li>Do Not make Changes in C_program file</li>
 <li>format for every program</li>
 </ol> 
