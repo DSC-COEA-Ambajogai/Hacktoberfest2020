@@ -12,5 +12,7 @@
 
 <!--Start writing Name from here-->
 
+> [Thien Vi Chi](https://github.com/tvc12)
+
 [DSC-COEA-Ambajogai](https://github.com/DSC-COEA-Ambajogai)
 
