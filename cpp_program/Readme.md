@@ -2,6 +2,7 @@
 <ol>
           <li>fork this repo</li>
           <li>Create New file of Program</li>
+          <li>file Name should be like (username_program_no.cpp) Example:(Dsc-coea_01.cpp)
           <li>Do not use Cpp_program file</li>
           <li>create a pull req.</li>
 <li>format for every program</li>
