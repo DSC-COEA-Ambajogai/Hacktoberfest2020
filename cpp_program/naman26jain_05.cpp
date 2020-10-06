@@ -3,7 +3,7 @@
           Program Name : Program to find Average of n Numbers                           
 */
 
-/*###########################Program to find Average of n Numbers################################## */
+/*###########################Program start################################## */
 #include<iostream>
 using namespace std;
 int main(){
