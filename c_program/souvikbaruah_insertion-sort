@@ -1,0 +1,64 @@
+/*       
+          Name: Souvik Baruah
+          Program Name : Insertion Sort Implementation                        
+*/
+
+/*###########################Program start################################## */
+
+#include <stdio.h> 
+int count[5]={0,0,0,0,0};
+void insertionSort(int a[], int n) 
+{ 
+	int i,j,key; 
+	for (i = 1; i < n; i++) 
+    { 
+		key = a[i];  //Line 1
+        count[0]+=1;
+		j = i - 1;   //Line 2
+        count[1]+=1;
+
+		while (j >= 0 && a[j] > key) 
+        { 
+			a[j + 1] = a[j];   //Line 3
+            count[2]+=1;
+			j = j - 1;         //Line 4
+            count[3]+=1;
+		} 
+		a[j + 1] = key;        //Line 5
+        count[4]+=1;
+	} 
+} 
+
+void display(int a[], int n) 
+{ 
+	int i; 
+    printf("The sorted array in ascending order is:\n");
+	for (i = 0; i < n; i++) 
+		printf("%d ", a[i]); 
+	printf("\n"); 
+    for(int i=0;i<5;i++)
+    {
+        printf("Line %d executed %d times\n",i+1,count[i]);
+    }
+} 
+
+int main() 
+{ 
+	int n,i;
+    int a[100]; 
+	printf("Enter the number of elements:\n");
+    scanf("%d",&n);
+    a[n];
+    printf("Enter the elements:\n");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+
+	insertionSort(a, n); 
+	display(a, n); 
+
+	return 0; 
+} 
+
+/*###########################Program End################################## */
