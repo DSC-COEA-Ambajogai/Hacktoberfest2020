@@ -1,0 +1,251 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<malloc.h>
+#include<iostream>
+using namespace std;
+
+struct EmpNo
+{
+    char ocp;
+    int Year;
+    int Month;
+    int s_no;
+};
+
+struct Address
+{
+    char h_no[20];
+    char street_name[20];
+    char town[30];
+    char city[30];
+    char state[30];
+    char country[30];
+    int  pin;
+};
+
+struct Employee 
+{
+    struct EmpNo empN;
+    char name[40];
+    char F_name[50];
+    char M_name[50];
+    struct Address adr;
+    struct Employee * next;
+};
+
+typedef struct Employee list;
+
+list* getnewNode() 
+{
+    list* newNod = (list*)malloc(sizeof(list));
+    newNod->next = NULL;
+    return (newNod);
+}
+
+void insert(list** head) {          //at beginning
+    list* newNode = getnewNode(); char buff[100];
+    cout<<"\nEnter the occupation of the Employee(O/C/M)(O-Office,C-Clerk,M-Multitask)\t";
+    scanf(" %c",&newNode->empN.ocp);
+    cout<<"\nEnter the Year of the entry of the employee\t";
+    scanf(" %d", &newNode->empN.Year);
+    cout<<"\nEnter the month of the entry of the employee\t";
+    scanf(" %d", &newNode->empN.Month);
+    cout<<"\nEnter the social security number of the employee\t";
+    scanf(" %d", &newNode->empN.s_no);
+    gets(buff);
+    cout<<"\nEnter the Name of the Employee: \t";
+    gets(newNode->name);
+    cout<<"\nEnter the Father's Name of the Employee: \t";
+    gets(newNode->F_name);
+    cout<<"\nEnter the Mother's Name of the Employee: \t";
+    gets(newNode->M_name);
+    cout<<"\nEnter the house number of the Employee: \t";
+    gets(newNode->adr.h_no);
+    cout<<"\nEnter the street name of the Employee: \t";
+    gets(newNode->adr.street_name);
+    cout<<"\nEnter the Name of town/village of the Employee: \t";
+    gets(newNode->adr.town);
+    cout<<"\nEnter the Name of City of the Employee: \t";
+    gets(newNode->adr.city);
+    cout<<"\nEnter the Name of state of the Employee: \t";
+    gets(newNode->adr.state);
+    cout<<"\nEnter the Name of Country of the Employee: \t";
+    gets(newNode->adr.country);
+    cout<<"\nEnter the PIN code of the Employee: \t";
+    scanf(" %d", &newNode->adr.pin);
+
+    if ((*head) == NULL)
+    (*head) = newNode;
+    else if ((*head)->next == NULL)
+    {
+        (*head)->next = newNode;
+    }
+    else
+    {
+        newNode->next = (*head);
+        (*head) = newNode;
+    }
+}
+void create(list** head) 
+{
+    int n;
+    cout<<"\nEnter the number of records you want to enter \n";
+    scanf(" %d", &n);
+    for (int i = 0; i < n; i++) {
+        insert(&(*head));
+    }
+}
+
+void display(list* head)
+{
+    if (head == NULL) {
+        cout<<"Record empty, exiting.";
+        return;
+    }
+    while (head != NULL) {
+        printf("\nEmployee Number in order (Occupation, Year, Month, No.)\n  %c %d %d %d", head->empN.ocp, head->empN.Year, head->empN.Month, head->empN.s_no);
+        printf("\nName of the Employee \n %s", head->name);
+        printf("\nFather's Name of the Employee\n %s", head->F_name);
+        printf("\nMother's Name of the Employee\n %s", head->M_name);
+        printf("\nHouse number of the Employee\n %s",head->adr.h_no);
+        printf("\nStreet name of the Employee\n%s",head->adr.street_name);
+        printf("\nName of town/village of the Employee\n %s", head->adr.town);
+        printf("\nCity of the Employee\n  %s", head->adr.city);
+        printf("\nState of the Employee\n %s", head->adr.state);
+        printf("\nCountry of the employee\n %s",head->adr.country);
+        printf("\nEnter the PIN code of the Employee\n %d",head->adr.pin);
+        head = head->next;
+    }
+    return; 
+}
+
+void disp(list* head) {
+	printf("\nEmployee Number in order (O Y M N)\n  %c %d %d %d", head->empN.ocp, head->empN.Year, head->empN.Month, head->empN.s_no);
+	printf("\nName of the Employee \n %s", head->name);
+	printf("\nFather's Name of the Employee\n %s", head->F_name);
+	printf("\nMother's Name of the Employee\n %s", head->M_name);
+    printf("\nHouse number of the Employee\n %s",head->adr.h_no);
+    printf("\nStreet name of the Employee\n%s",head->adr.street_name);
+	printf("\nName of town/village of the Employee\n %s", head->adr.town);
+	printf("\nCity of the Employee\n  %s", head->adr.city);
+	printf("\nState of the Employee\n %s", head->adr.state);
+	printf("\nCountry of the employee\n %s",head->adr.country);
+    printf("\nEnter the PIN code of the Employee\n %d", head->adr.pin);
+	return;
+}
+
+void searchNo(list* head, int ssn) 
+{
+    int flag = 0;
+    while ((head != NULL)&& flag==0) 
+    {
+        if (head->empN.s_no = ssn) 
+        {
+            cout<<"\nRecord Found";
+            flag = 1;
+        }
+    }
+    if (flag == 0)
+    cout<<"\nRecord not found";
+}
+
+void delet(list** head, int ssn) 
+{
+    if ((*head)==NULL){
+        cout<<"Record empty, exiting.";
+        return ;
+    }
+    if ((*head)->empN.s_no == ssn) 
+    (*head) = (*head)->next;
+    list* temp;
+    temp = getnewNode();
+    (*head) = temp;
+    (*head)=(*head)->next;
+    while ((*head)!=NULL)
+    {
+        if ((*head)->empN.s_no == ssn) 
+        {
+            temp->next = (*head) ->next;
+            temp = (*head);
+            free(temp);
+        }
+        (*head)=(*head)->next;
+    }
+    cout<<"\n New Record list is as follows \n";
+    display(*head);
+    
+}
+void count(list* head, int Yr) {
+    int count = 0;
+    while (head != NULL) {
+        if (head->empN.Year == Yr) {
+            disp(head);
+            count++;
+        }
+        head = head->next;
+    }
+    printf("No of employees in the year %d are %d", Yr,count);
+
+}
+int main()
+{
+    list* head;
+    head = NULL;
+    int choice, ssn, sn, y;
+    char ans = 'y';
+    do{
+        cout<<"\t\t MAIN MENU\n";
+        cout<<"1.Create new record.\n";
+        cout<<"2.Insert new record into the database.\n";
+        cout<<"3.Display the records.\n";
+        cout<<"4.Search the record for a given Social Security Number.\n";
+        cout<<"5.Delete a record for a given SSN.\n";
+        cout<<"6.Count the number of employees from a particular year. \n";
+        scanf(" %d", &choice);
+        switch (choice) 
+        {
+        case 1:
+            create(&head);
+            cout<<"\nDo you want to return to main menu(Y/N)";
+            scanf(" %c", &ans);
+            break;
+        case 2:
+            insert(&head);
+            cout<<"\nDo you want to return to main menu(Y/N)";
+            scanf(" %c", &ans);
+            break;
+        case 3:
+            display(head);
+            cout<<"\nDo you want to return to main menu(Y/N)";
+            scanf(" %c", &ans);
+            break;
+        case 4:
+            cout<<"\nEnter the SSN you want to search in the record\n";
+            scanf(" %d", &ssn);
+            searchNo(head, ssn);
+            cout<<"\nDo you want to return to main menu(Y/N)";
+            scanf(" %c", &ans);
+            break;
+        case 5:
+            cout<<"\nEnter the SSN of the record you want to delete \n";
+            scanf(" %d", &sn);
+            delet(&head, sn);
+            cout<<"\nDo you want to return to main menu(Y/N)";
+            scanf(" %c", &ans);
+            break;
+        case 6:
+            cout<<"\nEnter the year of which you want to count the employees.\n";
+            scanf(" %d", &y);
+            count(head, y);
+            cout<<"\nDo you want to return to main menu(Y/N)";
+            scanf(" %c", &ans);
+            break;
+        default:
+            cout<<"\n Wrong choice selected.";
+            cout<<"\nDo you want to return to main menu(Y/N)";
+            scanf(" %c", &ans);
+            break;
+        }
+    } while (ans == 'y' || ans == 'Y');
+    return 0;
+}
