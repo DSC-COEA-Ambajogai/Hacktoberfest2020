@@ -1,33 +1,38 @@
 /*       
-          Name: kriti
-          Program Name : palindrome    (as per list)                           
+          Name: shivam yadav
+          Program Name : palindrome by  recursion   (as per list)                           
 */
 
 /*###########################Program start################################## */
 
 #include<stdio.h>
-#include<math.h>
-main()
-{   
-    int r=0,n;
-	printf("enter the five digit no.");
-	scanf("%d",&n);//54321
-	int a=n;
-    for(int i=4;i>=0;i--)
-    {   int c=pow(10,i);
-    	r=r+c*(a%10);
-    	a=a/10;
-	}
-  printf("reverse no. =%d ",r);
-    if(n==r)
-    {
-    	printf("both are equal");
-	}
-	else
-	{
-    	printf("both are not equal");
-	}
-	
+
+int check_palindrome(int num){
+
+   static int reverse_num=0,rem;
+
+   if(num!=0){
+      rem=num%10;
+      reverse_num=reverse_num*10+rem;
+      check_palindrome(num/10);
+   }
+
+   return reverse_num;
+}
+int main(){
+   int num, reverse_num;
+
+   printf("Enter a number: ");
+   scanf("%d",&num);
+
+   reverse_num = check_palindrome(num);
+
+   if(num==reverse_num)
+      printf("%d is a palindrome number",num);
+   else
+      printf("%d is not a palindrome number",num);
+
+   return 0;
 }
 
 /*###########################Program End################################## */
