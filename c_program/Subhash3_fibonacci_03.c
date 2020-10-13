@@ -1,64 +1,39 @@
 /*
-        Name: Subhash Sarangi
-        Program Name: Fibonacci Series
+        Name: shivam yadav
+        Program Name: Fibonacci Series(recursion)
 */
 
 /*########## Program Start ##########*/
 
-#include <stdio.h>
-#include <stdlib.h>
-
-// All constant definitions
-#define MAX_STRING_LENGTH 128
-
-// Function prototypes
-void fibonacci(int n);
-void printUsage(char *programName, char *msg);
-
-int main(int argc, char *argv[])
+//Fibonacci Series using Recursion 
+#include<stdio.h>
+ 
+int Fibonacci(int);
+ 
+int main()
 {
-    if (argc != 2)
-    {
-        printUsage(argv[0], NULL);
-        exit(1);
-    }
-
-    int n = atoi(argv[1]);
-
-    fibonacci(n);
-
-    exit(0);
+   int n, i = 0, c;
+ 
+   scanf("%d",&n);
+ 
+   printf("Fibonacci series\n");
+ 
+   for ( c = 1 ; c <= n ; c++ )
+   {
+      printf("%d\n", Fibonacci(i));
+      i++; 
+   }
+ 
+   return 0;
 }
-
-void printUsage(char *programName, char *msg)
+ 
+int Fibonacci(int n)
 {
-    printf("Usage: %s <Length of the series>\n", programName);
-    if (msg)
-        printf("%s\n", msg);
-
-    return;
-}
-
-void fibonacci(int n)
-{
-    int prevPrev, prev, current;
-    int i;
-    prevPrev = 0, prev = 1;
-
-    printf("[");
-    for (i = 0; i < n; i++)
-    {
-        printf("%d, ", prevPrev);
-        fflush(NULL);
-
-        current = prevPrev + prev;
-        prevPrev = prev;
-        prev = current;
-    }
-
-    printf("\b\b]\n");
-
-    return;
-}
-
+   if ( n == 0 )
+      return 0;
+   else if ( n == 1 )
+      return 1;
+   else
+      return ( Fibonacci(n-1) + Fibonacci(n-2) );
+} 
 /*########## Program End ##########*/
