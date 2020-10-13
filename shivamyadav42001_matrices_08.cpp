@@ -1,3 +1,10 @@
+/*       
+          Name: shivam yadav
+          Program Name : addition and subtraction of matrices                     
+*/
+
+/*###########################addition and subtraction of matrices ################################## */
+
 #include<iostream> 
 using namespace std; 
 main()
@@ -49,3 +56,4 @@ cout << endl;
 }
 return 0;
 }
+/*###########################Program End################################## */
