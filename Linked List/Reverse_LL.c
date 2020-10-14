@@ -1,91 +1,83 @@
-//Reverse a Linked List
+// reverse a linked list using recursion
 #include <stdio.h>
 #include <stdlib.h>
 struct Node
 {
- int data;
- struct Node *next;
-}*first=NULL,*second=NULL,*third=NULL;
-void Display(struct Node *p)
+	int data;
+	struct Node* next;
+};
+void printList(struct Node* head)
 {
- while(p!=NULL)
- {
- printf("%d ",p->data);
- p=p->next;
- }
+	struct Node* ptr = head;
+	while (ptr)
+	{
+		printf("%d -> ", ptr->data);
+		ptr = ptr->next;
+	}
+
+	printf("NULL\n");
 }
-void create(int A[],int n)
-{
- int i;
- struct Node *t,*last;
- first=(struct Node *)malloc(sizeof(struct Node));
- first->data=A[0];
- first->next=NULL;
- last=first;
 
- for(i=1;i<n;i++)
- {
- t=(struct Node*)malloc(sizeof(struct Node));
- t->data=A[i];
- t->next=NULL;
- last->next=t;
- last=t;
- }
+void push(struct Node** head, int data)
+{
+	struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+	newNode->data = data;
+	newNode->next = *head;
+
+	*head = newNode;
 }
-void Reverse1(struct Node *p)
+
+// Recursive function to reverse the given linked list. It reverses the
+// given linked list by fixing the head pointer first and then .next
+// pointers of very node in reverse order
+void recursiveReverse(struct Node* head, struct Node** headRef)
 {
- int *A,i=0;
- struct Node *q=p;
+	struct Node* first;
+	struct Node* rest;
 
- A=(int *)malloc(sizeof(int)*count(p));
+	// empty list base case
+	if (head == NULL)
+	   return;
 
- while(q!=NULL)
- {
- A[i]=q->data;
- q=q->next;
- i++;
- }
- q=p;
- i--;
- while(q!=NULL)
- {
- q->data=A[i];
- q=q->next;
- i--;
- }
+	first = head;		  
+	rest = first->next;	
+
+	// base case: List has only one node
+	if (rest == NULL)
+	{
+		// fix the head pointer here
+		*headRef = first;
+		 return;
+	}
+
+	recursiveReverse(rest, headRef);
+
+	// put the first elem on the end of the list
+	rest->next = first;
+	first->next = NULL;	
 }
-void Reverse2(struct Node *p)
-{
- struct Node *q=NULL,*r=NULL;
 
- while(p!=NULL)
- {
- r=q;
- q=p;
- p=p->next;
- q->next=r;
- }
- first=q;
+// Reverse the given linked list. The function takes a pointer
+// (reference) to the head pointer
+void reverse(struct Node** head)
+{
+	recursiveReverse(*head, head);
 }
-void Reverse3(struct Node *q,struct Node *p)
+
+// Reverse linked list using Recursion
+int main(void)
 {
- if(p)
- {
- Reverse3(p,p->next);
- p->next=q;
- }
- else
- first=q;
-}
-int main()
-{
- 
- int A[]={10,20,40,50,60};
- create(A,5);
+	// input keys
+	int keys[] = { 1, 2, 3, 4, 5, 6 };
+	int n = sizeof(keys)/sizeof(keys[0]);
 
+	struct Node *head = NULL;
+	for (int i = n - 1; i >=0; i--)
+		push(&head, keys[i]);
 
- Reverse1(frist);
- Display(frist);
+	reverse(&head);
 
- return 0;
+	printList(head);
+
+	return 0;
 }
