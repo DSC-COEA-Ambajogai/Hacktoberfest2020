@@ -14,6 +14,7 @@
 
 > [Subhash Sarangi](https://github.com/Subhash3)
 > [Thien Vi Chi](https://github.com/tvc12)
+> [Nikunj Das Kasat](https://github.com/nikunjdk)
 
 [DSC-COEA-Ambajogai](https://github.com/DSC-COEA-Ambajogai)
 
