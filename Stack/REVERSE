@@ -1,0 +1,10 @@
+reverse(){  
+    int x;
+    if(top==1)
+    return;
+    else{
+        x=pop();
+        reverse();
+        pushBottom(x);         //this funtion is for pushing x to the bottom of the stack
+    }
+}
