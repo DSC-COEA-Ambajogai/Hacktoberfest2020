@@ -26,12 +26,6 @@ But, it’s not just about the t-shirts or stickers. Its about supporting open s
 
 Hacktoberfest® is open to everyone in our global community. Whether you’re a developer, student learning to code. You can contribute to anything from code to simple fix, new feature to grammar mistake. This motivates even a beginner to be a part of open source contributions.
 
-
-## What Can I Contribute?
-
-Hacktoberfest® is open to everyone in our global community. Whether you’re a developer, student learning to code. You can contribute to anything from code to simple fix, new feature to grammar mistake. This motivates even a beginner to be a part of open source contributions.
-
-
 ## Event details:
 Hacktoberfest® is open to everyone in our global community. Whether you’re a developer, student learning to code, event host, or company of any size, you can help drive growth of open source and make positive contributions to an ever-growing community. All backgrounds and skill levels are encouraged to complete the challenge.
 
