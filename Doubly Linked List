@@ -1,0 +1,42 @@
+#include<bits/stdc++.h>
+using namespace std;
+class DLLNode{
+	public:
+	int data;
+	class DLLNode *next;
+	class DLLNode *prev;
+};
+void DLLInsert(DLLNode **head,int data,int position){
+	int k = 1;
+	class DLLNode *temp,*newNode;
+	newNode = (class DLLNode*)malloc(sizeof(class DLLNode));
+	
+	if(!newNode) cout <<"Memory Error";
+	newNode->data = data;
+	if(position ==1){
+		newNode->next = *head;
+		newNode->prev = NULL;
+		if(*head)
+		(*head )->prev = newNode;
+	}
+	temp = *head;
+	{
+		while((k<position-1) && temp->next!=NULL)
+		temp = temp->next;
+		k++;
+	}
+	if(k!=position) cout <<"Desired position";
+	newNode->next = temp->next;
+	newNode->prev = temp;
+	if(temp->next)
+	temp->next->prev = newNode;
+	temp->next = newNode;
+	return;
+}
+int main(){
+DLLNode *head;
+DLLInsert( &head,55,1);
+//DLLInsert(&head,55,2);
+//DLLInsert(&head,55,3);
+return 0;
+}
