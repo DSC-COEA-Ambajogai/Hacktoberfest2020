@@ -2,8 +2,8 @@ import turtle
 
 t = turtle.Turtle()
 s = turtle.Screen()
-s.bgcolor('black')
-t.pencolor('white')
+s.bgcolor('green')
+t.pencolor('blue2')
 t.speed(-50)
 c = 0
 d = 0
