@@ -11,6 +11,7 @@
 ---
 
 <!--Start writing Name from here-->
+[68rohitd](https://github.com/68rohitd)
 
 > [Subhash Sarangi](https://github.com/Subhash3)
 > [Thien Vi Chi](https://github.com/tvc12)
