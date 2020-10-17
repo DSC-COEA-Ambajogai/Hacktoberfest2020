@@ -6,7 +6,7 @@
 ---
 ### add your name in this format only :)
 ```
-> [Sumagna Dey](https://github.com/sumagnadey)
+> [Your Name](Your Github profile url)
 ```
 ---
 
@@ -34,3 +34,4 @@
  [prnav4156](https://github.com/pranav4156)
 
  [HARSHJOSHI1417](https://github.com/HARSHJOSHI1417)
+[Sumagna Dey](https://github.com/sumagnadey)
