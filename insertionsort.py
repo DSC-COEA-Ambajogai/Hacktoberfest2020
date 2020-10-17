@@ -2,7 +2,7 @@
 arr=list(map(int,input().split()))
 for i in range(0,len(arr)):
     j=i
-    while j >0:
+    while j !<0:
         if(arr[j-1]>arr[j]):
             arr[j-1],arr[j]=arr[j],arr[j-1]
         else:
