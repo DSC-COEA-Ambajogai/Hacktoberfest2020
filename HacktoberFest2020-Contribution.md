@@ -44,3 +44,6 @@
 [Ida Bagus Putu Indra Sunarbawa](https://github.com/Indraawagin/)
 
 > [Ujjwal Paul](https://github.com/ujjwalpaul005)
+
+> [Devendra Naroliya](https://github.com/devinsightt)
+
