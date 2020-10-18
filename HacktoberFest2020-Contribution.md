@@ -47,4 +47,8 @@
 
 > [Ujjwal Paul](https://github.com/ujjwalpaul005)
 
+> [Devendra Naroliya](https://github.com/devinsightt)
 
+[Ranveer Sequeira] (https://github.com/ranveersequeira)
+
+[Aayushi](https://github.com/Aayu231)
