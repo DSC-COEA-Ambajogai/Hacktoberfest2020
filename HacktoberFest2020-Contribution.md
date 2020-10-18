@@ -52,3 +52,5 @@
 [Ranveer Sequeira] (https://github.com/ranveersequeira)
 
 [Aayushi](https://github.com/Aayu231)
+
+> [Irfan Shaikh](https://github.com/irfansk-22)
