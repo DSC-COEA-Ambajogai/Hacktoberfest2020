@@ -43,6 +43,8 @@
 
 [Ida Bagus Putu Indra Sunarbawa](https://github.com/Indraawagin/)
 
+[Reju Kundu](https://github.com/technicalreju)
+
 > [Ujjwal Paul](https://github.com/ujjwalpaul005)
 
 > [Devendra Naroliya](https://github.com/devinsightt)
