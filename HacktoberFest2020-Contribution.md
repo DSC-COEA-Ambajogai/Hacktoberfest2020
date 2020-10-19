@@ -44,3 +44,5 @@
 [Ida Bagus Putu Indra Sunarbawa](https://github.com/Indraawagin/)
 
 > [Ujjwal Paul](https://github.com/ujjwalpaul005)
+
+[Ranveer Sequeira] (https://github.com/ranveersequeira)
