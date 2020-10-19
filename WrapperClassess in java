@@ -1,0 +1,23 @@
+//Write a program of Wrapper Classess in java
+//package javaapplication2;
+public class wrapper {
+
+  public static void main(String args []){
+      System.out.println("-------Jyoti Chaurasiya 130-------");
+      int i = 45;  //Primitive datatype
+      System.out.println("Value of Primitive data type : "+i);
+      
+      Integer wc = new Integer(i); //Boxing or Wrapping
+      System.out.println("Value of Integer Wrapper class : "+wc);
+      
+      int j = wc.intValue();  //unboxing or Unwrapping
+      System.out.println("Unboxing or Unwrapping Value : "+j);
+      
+      Integer Value =i;  //Autoboxing
+      System.out.println("Autoboxing value :"+Value);
+      
+      int k = Value;  //AutoUnboxing
+      System.out.println("AutoUnboxing Value : "+k);   
+  }
+}
+
