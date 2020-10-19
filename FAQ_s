@@ -1,0 +1,31 @@
+
+
+Why is my pull request in a maturing state on my profile?
+﹢
+
+In an effort to reduce spam and help maintainers, we’ve introduced a two week review period for all pull requests. Once you have submitted an eligible pull request (ready for review, not draft), the fourteen-day review window begins. This period gives maintainers time to identify and label any spammy pull requests as invalid. If your pull request is not marked invalid during that window, it will contribute toward the four you need to complete the Hacktoberfest challenge. If during this period your pull request is labeled as invalid, you will need to submit another eligible pull request (or resolve the issue with the current pull request), at which point the review period will start again.
+
+
+My pull request was labeled as invalid by a maintainer, why doesn’t it count?
+﹢
+
+If a repository maintainer decides a pull request you made was spammy or an unhelpful contribution to the project, they can add an invalid or spam label to your PR. This lets us know they do not think your pull request is a quality contribution, so it will not count toward Hacktoberfest.
+
+
+How do I get started?
+﹢
+
+First, register at hacktoberfest.digitalocean.com. Then, submit at least four pull requests to any public GitHub repository that is classified with the hacktoberfest topic or has a hacktoberfest-accepted label on it. You can look for open issues labeled Hacktoberfest for inspiration. Quality contributions are encouraged! Are you maintaining a repo? Create issues or classify existing issues on your GitHub projects with hacktoberfest to help let new contributors know what to work on. Tag any spam or irrelevant pull requests with the invalid label to disqualify them.
+
+
+What do I do if I want to contribute to a project but it doesn’t have the hacktoberfest topic?
+﹢
+
+You can still contribute to any public GitHub repository and have it count towards your progress provided that your pull request is labeled with hacktoberfest-accepted.
+
+
+If I made 4 pull requests before October 3rd, 2020 and they were merged, will they count towards my goal?
+﹢
+
+All pull requests made before October 3 at 12:00 UTC, 2020, will count before the rules were changed. Please keep in mind that the review window has been updated to 14 days.
+Log in with your GitHub account at hacktoberfest.digitalocean.com to check your progress and stats.
