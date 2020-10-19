@@ -43,4 +43,20 @@
 
 [Ida Bagus Putu Indra Sunarbawa](https://github.com/Indraawagin/)
 
+[Reju Kundu](https://github.com/technicalreju)
+
 > [Ujjwal Paul](https://github.com/ujjwalpaul005)
+
+> [Devendra Naroliya](https://github.com/devinsightt)
+
+[Ranveer Sequeira] (https://github.com/ranveersequeira)
+
+[Aayushi](https://github.com/Aayu231)
+
+> [Irfan Shaikh](https://github.com/irfansk-22)
+
+
+[Zaharia Iulian](https://github.com/Zaheudev)
+
+> [Ilhamtaufiq](https://github.com/ilhamtaufiq)
+
