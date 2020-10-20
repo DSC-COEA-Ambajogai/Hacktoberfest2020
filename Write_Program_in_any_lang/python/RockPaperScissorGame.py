@@ -1,3 +1,4 @@
+#hacoberfest2020
 def play_game():
     while True:
         rps=input("Rock, Paper, Scissor?   ")
