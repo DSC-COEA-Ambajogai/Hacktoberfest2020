@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,d;
+    cin>>n;//taking a user input
+    int a[n];//array of size n
+    cin>>d;
+    for(int i=0;i<n;cin>>a[i],i++);//elements of an array
+    d=d%n;
+    for(int i=d;i<n;i++)//left rotate arr[] of size n 
+        cout<<a[i]<<" ";
+    
+    for(int i=0;i<d;i++)
+         cout<<a[i]<<" ";//to print an rotated array
+    return 0;
+}
