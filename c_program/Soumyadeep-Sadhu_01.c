@@ -1,4 +1,9 @@
-//Palindrome Program
+/*       
+          Name: Soumyadeep Sadhu
+          Program Name : Palindrome Program                              
+*/
+
+/*###########################Program start################################## */
 #include <stdio.h>
 int main() {
     int n, reversedN = 0, remainder, originalN;
@@ -21,3 +26,4 @@ int main() {
 
     return 0;
 }
+/*###########################Program End################################## */
