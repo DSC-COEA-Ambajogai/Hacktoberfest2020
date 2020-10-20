@@ -1,0 +1,90 @@
+/Even Odd according to position/
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+struct node
+{
+    int info;
+    struct node *next;
+} *start = NULL;
+void create(int n)
+{
+    if (n <= 0)
+        printf("U can't able to store LL");
+    else
+    {
+        struct node *ptr;
+        ptr = (struct node *)malloc(sizeof(struct node));
+        printf("Enter data: ");
+        scanf("%d", &ptr->info);
+        ptr->next = NULL;
+        start = ptr;
+        int i;
+        for (i = 1; i < n; i++)
+        {
+            ptr->next = (struct node *)malloc(sizeof(struct node));
+            ptr = ptr->next;
+            printf("Enter data: ");
+            scanf("%d", &ptr->info);
+            ptr->next = NULL;
+        }
+        printf("\n");
+    }
+}
+void EvenOddAccordingToPostion()
+{
+    struct node *odd1, *odd2, *even1, *even2;
+    odd1 = start;
+    even1 = start->next;
+    if (odd1 == NULL || even1 == NULL || even1->next == NULL)
+    {
+        return;
+    }
+    else
+    {
+        odd2 = even1->next;
+        even2 = odd2->next;
+        while (even2 != NULL)
+        {
+            even1->next = even2;
+            odd2->next = even1;
+            odd1->next = odd2;
+            odd1 = odd1->next;
+            even1 = even2;
+            if (even2->next == NULL)
+                return;
+            else
+                odd2 = even2->next;
+            even2 = odd2->next;
+        }
+        if (odd2->next == NULL)
+        {
+            odd2->next = odd1->next;
+            even1->next = NULL;
+            odd1->next = odd2;
+        }
+    }
+}
+void display()
+{
+    struct node *p;
+    p = start;
+    while (p != NULL)
+    {
+        printf("%d   ", p->info);
+        p = p->next;
+    }
+    printf("\n\n");
+}
+int main()
+{
+    int n;
+    printf("Enter total number of element ");
+    scanf("%d", &n);
+    create(n);
+    EvenOddAccordingToPostion();
+    display();
+    return 0;
+}
