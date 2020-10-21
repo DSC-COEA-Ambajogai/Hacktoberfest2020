@@ -62,3 +62,5 @@
 > [Ilhamtaufiq](https://github.com/ilhamtaufiq)
 
 > [MehdiCHEBBAH](https://github.com/MehdiCHEBBAH)
+
+> [Anirudh Bagri](https://github.com/anirudhbagri)
