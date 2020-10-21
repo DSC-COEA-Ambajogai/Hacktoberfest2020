@@ -1,4 +1,4 @@
-# Hactoberfest2020
+# Hacktoberfest2020
 <img src="https://github.com/WinterSoldier13/Hacktoberfest/blob/master/images/banner2.png?raw=true">
 
 
@@ -9,10 +9,10 @@
 ## For Contribution follow links this Link
  - write programs in ***C*** language          ---> [***C Program***](https://github.com/DSC-COEA-Ambajogai/Hactoberfest2020/tree/main/c_program)<br>
  - write programs in ***CPP*** language        ---> [***Cpp Program***](https://github.com/DSC-COEA-Ambajogai/Hactoberfest2020/tree/main/cpp_program)<br>
-  - write Hello World Program in Any language   ---> [***Write Program in any language***](https://github.com/DSC-COEA-Ambajogai/Hactoberfest2020/tree/main/Write_Program_in_any_lang)<br>
- - write Your Name as a Contributer   ---> [***Hactoberfest2020-Contribution***](https://github.com/DSC-COEA-Ambajogai/Hactoberfest2020/blob/main/HacktoberFest2020-Contribution.md)
+  - write Hello World Program in Any language   ---> [***Write Program in any language***](https://github.com/DSC-COEA-Ambajogai/Hacktoberfest2020/tree/main/Write_Program_in_any_lang)<br>
+ - write Your Name as a Contributer   ---> [***Hacktoberfest2020-Contribution***](https://github.com/DSC-COEA-Ambajogai/Hactoberfest2020/blob/main/HacktoberFest2020-Contribution.md)
 
-## what is Hactoberfest?
+## what is Hacktoberfest?
 **Hacktoberfest** is a month-long celebration of open source software run by DigitalOcean in partnership with GitHub and Twilio. Hacktoberfest is open to everyone in our global community!
 
 ## Why Should I Contribute?
@@ -41,7 +41,7 @@ Read the [participation details](https://hacktoberfest.digitalocean.com/details)
 
 ## Projects in which you can contribute:
 - Any `github` repository 
-- For the sake of convinience, you can contribute to this very project :)
+- For the sake of convenience, you can contribute to this very project :)
 
 ## How to Contribute in this repo.
 
@@ -54,7 +54,7 @@ Even if your pull requests aren’t accepted, they should still count toward you
 ## What kinds of pull requests count toward earning the Hacktoberfest shirt?
 Any pull request made to a public repo on GitHub will count. The pull request must contain commits you personally made yourself — not automated commits from bots.
 
-You can contribute to any open source project hosted on Github.com and contribute anything between October 1 to October 31 midnight in 2020. You will find plenty of issues labeled with hacktoberfest or good-first-issue etc on Github. These will be the simple ones most probably and easy to fix.
+You can contribute to any open source project hosted on [GitHub](github.com) and contribute anything between October 1 to October 31 midnight in 2020. You will find plenty of issues labeled with hacktoberfest or good-first-issue etc on Github. These will be the simple ones most probably and easy to fix.
 
 
 ---
