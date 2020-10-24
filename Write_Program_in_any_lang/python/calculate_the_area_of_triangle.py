@@ -13,6 +13,5 @@ c = float(input('Enter third side: '))
 
 # calculate the semi-perimeter
 ar(a,b,c)
-
 print('The area of the triangle is %0.2f' %area)
 
