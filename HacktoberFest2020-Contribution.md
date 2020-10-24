@@ -64,3 +64,5 @@
 > [MehdiCHEBBAH](https://github.com/MehdiCHEBBAH)
 
 > [Anirudh Bagri](https://github.com/anirudhbagri)
+
+> [Celeste Zapata](https://github.com/zetadeceleste)
