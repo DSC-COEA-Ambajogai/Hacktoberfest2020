@@ -36,10 +36,9 @@ int main()
     cin >> n;
 	int arr[n];
 	for(int i = 0; i < n; i++)
-	cin >> arr[i];
+		cin >> arr[i];
     selectionSort(arr, n); 
-	cout << "Sorted array: \n"; 
-	printArray(arr, n); 
+	cout << "Sorted array: \n"; << printArray(arr, n); 
 	return 0; 
 } 
 
