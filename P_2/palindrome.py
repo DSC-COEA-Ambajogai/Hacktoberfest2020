@@ -1,3 +1,8 @@
+"""
+Takes string as a input and returns if string is palindrome or not.
+"""
+
+
 my_str = input("Enter a string:")
 
 # make it suitable for caseless comparison
