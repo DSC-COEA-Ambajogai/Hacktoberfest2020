@@ -65,8 +65,11 @@
 
 > [Anirudh Bagri](https://github.com/anirudhbagri)
 
+>[Krisha Adeshara](https://githun.com/Krishi-02)
+
 > [Celeste Zapata](https://github.com/zetadeceleste)
 
 > [3DAddict](https://github.com/3daddict)
 
 > [Jenia90](https://github.com/jenia90)
+
