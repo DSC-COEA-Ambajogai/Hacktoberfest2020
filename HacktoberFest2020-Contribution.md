@@ -49,6 +49,8 @@
 
 > [Devendra Naroliya](https://github.com/devinsightt)
 
+> [Shyam Sundar Vashishtha](https://github.com/shyam640)
+
 [Ranveer Sequeira] (https://github.com/ranveersequeira)
 
 [Aayushi](https://github.com/Aayu231)
