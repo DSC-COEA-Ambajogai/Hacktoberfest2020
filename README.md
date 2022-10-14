@@ -1,8 +1,13 @@
-# Hacktoberfest2020
-<img src="https://github.com/WinterSoldier13/Hacktoberfest/blob/master/images/banner2.png?raw=true">
+
+# HacktoberFest 2020
+![image](https://user-images.githubusercontent.com/46648301/195761281-783c51c8-64d6-4b90-a4bd-219dbb7b5cd7.png)
 
 
-# [HacktoberFest 2020](https://hacktoberfest.digitalocean.com/)
+## For Contribution follow links this Link
+ - write programs in ***C*** language          ---> [***C Program***](https://github.com/DSC-COEA-Ambajogai/Hactoberfest2020/tree/main/c_program)<br>
+ - write programs in ***CPP*** language        ---> [***Cpp Program***](https://github.com/DSC-COEA-Ambajogai/Hactoberfest2020/tree/main/cpp_program)<br>
+  - write Hello World Program in Any language   ---> [***Write Program in any language***](https://github.com/DSC-COEA-Ambajogai/Hacktoberfest2020/tree/main/Write_Program_in_any_lang)<br>
+ - write Your Name as a Contributer   ---> [***Hacktoberfest2020-Contribution***](https://github.com/DSC-COEA-Ambajogai/Hactoberfest2020/blob/main/HacktoberFest2020-Contribution.md)
 
 
 
