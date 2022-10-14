@@ -1,7 +1,3 @@
-# Hacktoberfest2020
-
-
-
 
 # HacktoberFest 2020
 ![image](https://user-images.githubusercontent.com/46648301/195761281-783c51c8-64d6-4b90-a4bd-219dbb7b5cd7.png)
